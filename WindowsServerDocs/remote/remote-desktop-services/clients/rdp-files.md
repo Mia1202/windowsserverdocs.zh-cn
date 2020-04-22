@@ -39,7 +39,7 @@ ms.locfileid: "80855910"
 | devicestoredirect:s:value | 确定客户端计算机上将被重定向并在远程会话中可用的设备。 | - *：重定向所有支持的设备，包括稍后连接的设备<br> - 一个或多个设备的有效硬件 ID | | x | x | x |
 | disableconnectionsharing:i:value | 确定远程桌面客户端在 RemoteApp 或桌面启动时是重新连接到任何现有的已打开连接还是启动新的连接 | - 0：重新连接到任何现有会话<br>- 1：启动新的连接 | 0 | x | x | x |
 | domain:s:value | 指定将用于登录远程计算机的用户帐户所在域的名称。 | 有效的域名，例如“CONTOSO” | 无默认值 | x | x | x |
-| drivestoredirect:s:value | 确定客户端计算机上将被重定向并在远程会话中可用的本地磁盘驱动器。 | - 未指定值：不重定向任何驱动器<br>- *：重定向所有磁盘驱动器，包括稍后连接的驱动器<br>- DynamicDrives：重定向稍后连接的所有驱动器<br>- 驱动器以及一个或多个驱动器的标签，例如“drivestoredirect:s:C:;E:;”：重定向指定的驱动器| 未指定值：不重定向任何驱动器 | x | x    | |
+| drivestoredirect:s:value | 确定客户端计算机上将被重定向并在远程会话中可用的本地磁盘驱动器。 | - 未指定值：不重定向任何驱动器<br>- *：重定向所有磁盘驱动器，包括稍后连接的驱动器<br>- DynamicDrives：重定向稍后连接的所有驱动器<br>- 驱动器以及一个或多个驱动器的标签，例如“drivestoredirect:s:C:;E:;”：重定向指定的驱动器| *：重定向所有磁盘驱动器，包括稍后连接的驱动器 | x | x    | |
 | enablecredsspsupport:i:value | 确定 RDP 是否会在凭据安全支持提供程序 (CredSSP) 可用的情况下使用它来进行身份验证。 | - 0：即使操作系统支持 CredSSP，RDP 也不会使用 CredSSP<br>- 1：如果操作系统支持 CredSSP，则 RDP 将使用 CredSSP | 1 | x | x | |
 | encode redirected video capture:i:value | 启用或禁用已重定向视频的编码。 | - 0：禁用已重定向视频的编码<br>- 1：启用已重定向视频的编码 | 1 | x | x | x |
 | full address:s:value | 此设置指定想要连接到的远程计算机的名称或 IP 地址 | 有效的计算机名称、IPv4 地址或 IPv6 地址。 | | x | x | x |
